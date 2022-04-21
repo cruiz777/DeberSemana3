@@ -10,7 +10,7 @@
         </Frame>
         
             <Label Text="Sistema de Notas" FontSize="30" Padding="30,0,30,0"/>
-            <Label x:Name="txtnombre" FontSize="20" ></Label>
+            <Label x:Name="txtnombre" FontSize="22"  ></Label>
         
             <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
             <Grid >

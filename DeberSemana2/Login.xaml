@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberSemana2.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Universidad Israel" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Ingreso al Sistema" FontSize="30" Padding="30,0,30,0"/>
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+
+
+                </Grid.RowDefinitions>
+                <Label Text="Usuario:" Grid.Column="0" Grid.Row="0"></Label>
+                <Entry x:Name="txtusuario" Grid.Column="1" Grid.Row="0" Placeholder="Usuario"></Entry>
+
+                <Label Text="Clave:" Grid.Column="0" Grid.Row="1"></Label>
+                <Entry x:Name="txtclave" IsPassword="True" Grid.Column="1" Grid.Row="1" Placeholder="Clave"></Entry>
+            </Grid>    
+                <Button x:Name="Ingresar" Clicked="Ingresar_Clicked" Text="Ingresar" Grid.Column="0" Grid.Row="2"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

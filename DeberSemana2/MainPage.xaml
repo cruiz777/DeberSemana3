@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberSemana2.MainPage">
+    <ScrollView>
+        <StackLayout>
+      
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Universidad Israel" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+            <Label Text="Sistema de Notas" FontSize="30" Padding="30,0,30,0"/>
+            <Label x:Name="txtnombre" FontSize="20" ></Label>
+        
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    
+                    
+                </Grid.RowDefinitions>
+
+                <Label Text="Parcial 1" Padding="30,24,30,0" FontSize="24"  Grid.Column="0" Grid.Row="0">
+            </Label>
+            <Label Text="Nota Seguimiento 1:" Grid.Column="0" Grid.Row="1"></Label>
+                <Entry x:Name="ns1" Placeholder="Ingreso nota" Grid.Column="1" Grid.Row="1" Keyboard="Numeric"></Entry>
+            <Label Text="Examen 1:" Grid.Column="0" Grid.Row="2"></Label>
+                <Entry x:Name="ex1" Placeholder="Ingreso nota" Grid.Column="1" Grid.Row="2" Keyboard="Numeric"></Entry>
+            <Label Text="Nota Parcial 1" Grid.Column="0" Grid.Row="3"></Label>
+            <Entry x:Name="p1" IsReadOnly="True" Grid.Column="1" Grid.Row="3"></Entry>
+            <Label Text="Parcial 2" FontSize="24" Padding="30,24,30,0" Grid.Column="0" Grid.Row="4">
+        </Label>
+        
+            <Label Text="Nota Seguimiento 2:" Grid.Column="0" Grid.Row="5"></Label>
+            <Entry x:Name="ns2" Placeholder="Ingreso nota" Keyboard="Numeric" Grid.Column="1" Grid.Row="5"></Entry>
+            <Label Text="Examen 2:" Grid.Column="0" Grid.Row="6"></Label>
+            <Entry x:Name="ex2" Placeholder="Ingreso nota" Keyboard="Numeric" Grid.Column="1" Grid.Row="6"></Entry>
+            <Label Text="Nota Parcial 2" Grid.Column="0" Grid.Row="7"></Label>
+            <Entry x:Name="p2" IsReadOnly="True" Grid.Column="1" Grid.Row="7"></Entry >
+                <Label Text="Nota Final" Grid.Column="0" Grid.Row="8"></Label>
+                <Entry x:Name="nfinal" IsReadOnly="True" Grid.Row="8" Grid.Column="1"></Entry>
+                
+ 
+
+                <Button x:Name="suma" Text="calcular" Clicked="suma_Clicked" Grid.Column="0" Grid.Row="9"></Button>
+            </Grid>
+
+
+
+        </StackLayout>
+      </ScrollView>
+</ContentPage>
